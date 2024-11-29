@@ -64,7 +64,7 @@ include 'sidebar.php'; ?>
                 <div class="panel-body panel-info bk-primary text-light" style="background-color:#D6EAF8; border-radius:50px">
                   <div class="stat-panel text-center">
                     <?php
-                      $sql =" SELECT * from donor_details ";
+                      $sql =" SELECT * from donor_details";
                       $result=mysqli_query($conn,$sql) or die("query failed.");
                       $row=mysqli_num_rows($result);
 
@@ -134,7 +134,68 @@ include 'sidebar.php'; ?>
             </div>
 
 
+            
+             <div class="col-md-3">
+              <div class="panel panel-default panel-info" style="border-radius:50px;">
+                <div class="panel-body panel-info bk-primary text-light" style="background-color:#E8DAEF ;border-radius:50px; ">
+                  <div class="stat-panel text-center">
+                    <?php
+                      $sql2 ="SELECT * from users";
+                      $result2=mysqli_query($conn,$sql2) or die("query failed.");
+                      $row2=mysqli_num_rows($result2);
 
+                    ?>
+
+
+                    <div class="stat-panel-number h1 "><?php echo $row2 ?></div>
+                    <div class="stat-panel-title text-uppercase">Registered Users</div>
+                    <br>
+                    <button class="btn btn-danger" onclick="window.location.href = 'user_list.php';">
+                      Full Detail <i class="fa fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 lg-12 sm-12">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="panel panel-default panel-info" style="border-radius:50px;">
+                <div class="panel-body panel-info bk-primary text-light" style="background-color:#D6EAF8; border-radius:50px">
+                  <div class="stat-panel text-center">
+                    <?php
+                      $sql =" SELECT * from user_requests";
+                      $result=mysqli_query($conn,$sql) or die("query failed.");
+                      $row=mysqli_num_rows($result);
+
+                    ?>
+
+
+                    <div class="stat-panel-number h1"><?php echo $row?></div>
+                    <div class="stat-panel-title text-uppercase">Pending Approval List</div>
+                    <br>
+                      <button class="btn btn-danger" onclick="window.location.href = 'pending_approval.php';">
+                        Full Detail <i class="fa fa-arrow-right"></i>
+                      </button>
+
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            
+    </div>
         </div>
       </div>
     </div>

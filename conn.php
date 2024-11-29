@@ -1,3 +1,14 @@
 <?php
-$conn=mysqli_connect("localhost","root","","blood_donation") or die("Connection error");
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "blood_bank_database";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 ?>
+

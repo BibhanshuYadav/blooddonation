@@ -16,11 +16,11 @@
 </head>
 <body>
   <div id="footer" >
-  <b><center>COPYRIGHT © 2020<br>
-  Blood Bank & Donation Management
-  <br>
+  <b>COPYRIGHT © 2024<br>
+  Blood  Donation
+  
   ALL RIGHTS RESERVED.
-  </center>
+  <b>
   </div>
 
 
